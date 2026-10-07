@@ -1,0 +1,32 @@
+{
+  "prompt_manifest_version": "prompt-assets-v1",
+  "llm_instruction_version": "scene-simplifier-v1",
+  "style_version": "dreamy-ascii-v1",
+  "scene_input_version": "scene-input-v1",
+  "scene_simplifier_instruction": {
+    "file": "scene_simplifier_instruction.txt",
+    "sha256": "91835e25b9c6d5edbb2d4760c6ab5e12f318c6eb732ded68ee395f8934802176"
+  },
+  "project_scene_constraints": {
+    "file": "project_scene_constraints.txt",
+    "sha256": "15d8fa1b831f36fe3376fc0be80effaee13cfa1ad868f00924e4d154b19f6b76"
+  },
+  "style_photographic": {
+    "file": "style_photographic.txt",
+    "sha256": "225733fb6c1e86208a16f89e2ec30579bc9df90e27656df7e8d377444a0d82da"
+  },
+  "style_ascii": {
+    "file": "style_ascii.txt",
+    "sha256": "fa70674cb734ce6962c0d4433e123f00bf08fb249e759a788c6049a34ed87ccb"
+  },
+  "scene_constraints": {
+    "file": "scene_constraints.txt",
+    "sha256": "4d43dfb67d41f4496e70fba8065ecd812c3b1468eb76c0efe730f991eefd6aaa"
+  },
+  "source_files_sha256": {
+    "request.md": "5dee51a491d7ad54b53ddc9aa08fdb13bdfd59f474c0b555f417f3206f7d3aae",
+    "Scene abstraction prompt.md": "082c8938cd39c22e2b0b4523eb83f8989b8103d43c1356faee72431c131a82a3",
+    "Style prompt.md": "3149b98a5f7a1edaf1ef55772e27b994b9b8fd53cb93c482220493e04100a47f"
+  },
+  "notes": "v3: memory-anchor authorization added to both constraint texts (catalog scent-motifs-v3)"
+}

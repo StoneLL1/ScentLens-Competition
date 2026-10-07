@@ -1,0 +1,14 @@
+{
+  "version": "scent-atmosphere-v1",
+  "_doc": "Per-scent light/mood hint, keyed on the PRIMARY scent. Static art direction, never computed from scores, never adds objects (light and air only). Lives outside the planning digest so it does not reshuffle scene seeds.",
+  "scents": {
+    "lemon": "bright clean morning air, light and crisp with a fresh citrus coolness",
+    "rose": "soft romantic dusk warmth, gently glowing and intimate",
+    "lavender": "calm twilight haze, cool quiet violet-toned air",
+    "grass": "fresh open-air morning, sun-warmed and breezy",
+    "peach": "warm juicy late-afternoon golden light, mellow and soft",
+    "clove": "warm spiced kitchen air, a deep amber-red glow like a slow-simmering spice pot, cozy and enveloping",
+    "cedarwood": "cool dry still air of a wooden chest, quiet grey-brown calm with a hint of pencil-shaving freshness",
+    "vanilla": "a soft warm cream glow, gently sweet and comforting like warm milk-light, tender and rounded"
+  }
+}

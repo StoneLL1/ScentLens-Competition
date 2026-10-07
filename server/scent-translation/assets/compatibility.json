@@ -1,0 +1,23 @@
+{
+  "version": "compatibility-v1",
+  "max_environments": 1,
+  "neutral_background": "a plain, indeterminate, heavily blurred background",
+  "neutral_support": "a plain, indeterminate surface",
+  "environment_relations": {
+    "grass": "objects rest on or beside the selected grassy region",
+    "cedarwood": "objects rest on or beside the selected cedarwood form",
+    "lavender": "objects sit beside the selected lavender patch, not inside the flower spikes"
+  },
+  "generic_object_relation": "objects form one coherent still-life group on the same surface",
+  "requirements": [
+    "every scent-bearing motif must belong to a visible input scent",
+    "every requires_scent_ids entry must also be visible",
+    "one environment maximum",
+    "neutral support must not name a scent-bearing material",
+    "at most five large shape groups"
+  ],
+  "forbidden_unrequested_contexts": [
+    "ocean", "beach", "rain", "smoke", "coffee", "cake", "ice cream", "milk",
+    "water pool", "forest", "unselected flowers", "unselected fruit", "unselected wood surfaces"
+  ]
+}

@@ -1,0 +1,43 @@
+PROJECT CONSTRAINTS:
+The input is an already planned scene. Do not reinterpret scent scores or redesign it.
+
+Preserve every selected entity, its motif, stated count or grouping, emphasis,
+placement, composition, and spatial relations. Do not add or substitute objects,
+scent sources, materials, weather, locations, actions, or decorative scenery.
+A neutral unspecified background or support must remain plain and indeterminate.
+
+Use one dominant subject when the input has one primary entity. If the input mode
+is dual, preserve both co-primary entities with comparable importance instead of
+forcing a single winner. If the primary entity is an environment, let that
+scent-bearing environment remain dominant. If it is the only entity, do not
+invent a foreground object. An environmental accent must remain localized.
+
+Treat 3–5 major shapes and 2–4 colors as simplification targets, not quotas.
+Fewer shapes or colors are acceptable for a sparse scene. Do not add objects to
+fill the budget. A compact group may read as one mass, but preserve its named
+members and stated count. Do not delete selected accent entities as tiny details.
+
+Retain the object names and minimum recognizable silhouettes. Simplify grass into
+a continuous grassy green field without blades, a selected lavender patch into
+joined violet masses, and selected cedarwood into broad brown wooden forms without
+fine grain. The sky, ocean, and forest examples apply only when explicitly present
+in the input; they do not authorize adding those settings. Clove means dried spice
+buds, not lilac flowers. Vanilla means the selected pods, not cake or ice cream.
+Exception: when a selected motif phrase itself names a memory-anchor object
+(mulled wine, orange pomander, sharpened pencil, vanilla ice cream, vanilla
+cream), that anchor object is explicitly authorized for that scent only; the
+anchor must stay clearly tied to its named scent source, and all other
+blacklisted contexts remain forbidden.
+
+When ascii.enabled is true, mention luminous ASCII only inside its specified target
+forms. Keep other regions almost free of ASCII. If a target is an environment,
+confine ASCII to a bounded focal region within that existing environment.
+When ascii.enabled is false, do not mention or request ASCII.
+
+Only the coarse scene content and ASCII placement belong here. Do not invent a
+new visual style or repeat the full photographic, grain, blur, or bloom treatment;
+the fixed style is appended later. Use natural object colors unless broad color
+hints are explicitly supplied; do not calculate colors or light from confidence.
+
+Output one concise English paragraph, preferably 40–120 words. Do not output JSON,
+Markdown, headings, explanations, scores, internal IDs, or readable image labels.

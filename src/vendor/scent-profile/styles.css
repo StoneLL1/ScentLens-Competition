@@ -1,0 +1,518 @@
+/**
+ * Scent Profile 组件样式。
+ *
+ * P0 建立变量与骨架布局：背景/文字/冷暖色系变量来自 Request.md §3.5，
+ * 系统字体，卡片最大宽度约 720 CSS px；响应式细化在 P5。
+ * 色云的冷暖色值在 P2 由 fields/colors.ts 消费（经 config 与此处变量保持一致）。
+ */
+
+.scent-profile {
+  /* ── 主题变量（Request.md §3.5 设计起点） ── */
+  --sp-bg: #f8f7f4;
+  --sp-text: #273142;
+  --sp-text-muted: #626973;
+  --sp-cool-mist: #589bbb;
+  --sp-cool-deep: #397da6;
+  --sp-mid: #9b88a9;
+  --sp-warm-mist: #b56891;
+  --sp-warm-deep: #9b2b33;
+  --sp-grid-dot: #273142;
+  --sp-grid-line: #273142;
+  --sp-debug-contour: #397da6;
+
+  /* ── 间距与排版 ── */
+  --sp-gap: 24px;
+  --sp-card-max: 720px;
+  --sp-card-padding: 28px;
+
+  max-width: var(--sp-card-max);
+  margin: 0 auto;
+  padding: var(--sp-card-padding);
+  background: var(--sp-bg);
+  color: var(--sp-text);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, sans-serif;
+}
+
+/* ── 页头 ── */
+.sp-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--sp-gap);
+  margin-bottom: var(--sp-gap);
+}
+
+.sp-header h1 {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.sp-subtitle {
+  margin: 4px 0 0;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  color: var(--sp-text-muted);
+}
+
+.sp-view-tag {
+  font-size: 12px;
+  color: var(--sp-text-muted);
+  white-space: nowrap;
+  padding-top: 4px;
+}
+
+/* ── 图形区：正方形，五层叠放 ── */
+.sp-figure {
+  margin: 0;
+}
+
+.sp-stage {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background: var(--sp-bg);
+}
+
+.sp-stage > canvas,
+.sp-stage > svg,
+.sp-hit-layer {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.sp-fog-canvas {
+  z-index: 1;
+  pointer-events: none;
+}
+
+.sp-body-canvas {
+  z-index: 2;
+  pointer-events: none;
+}
+
+.sp-grid-svg {
+  z-index: 3;
+  pointer-events: none;
+}
+
+.sp-labels-svg {
+  z-index: 4;
+  pointer-events: none;
+}
+
+.sp-hit-layer {
+  z-index: 5;
+}
+
+/* ── 网格：点弱、线浅，不抢云团 ── */
+.sp-rings circle {
+  fill: var(--sp-grid-dot);
+  opacity: var(--sp-dot-opacity, 0.18);
+}
+
+.sp-radials line {
+  stroke: var(--sp-grid-line);
+  stroke-width: var(--sp-line-width, 0.6);
+  opacity: var(--sp-line-opacity, 0.12);
+}
+
+/* ── 标签 ── */
+.sp-labels text {
+  fill: var(--sp-text);
+  font-family: inherit;
+  letter-spacing: 0.04em;
+}
+
+/* ── 状态说明与控件 ── */
+.sp-caption {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--sp-gap);
+  margin-top: 14px;
+  min-height: 20px;
+}
+
+.sp-caption-left {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 10px;
+  flex-wrap: wrap;
+  min-width: 0;
+}
+
+.sp-status {
+  font-size: 13px;
+  color: var(--sp-text-muted);
+}
+
+.sp-source-note {
+  font-size: 12px;
+  color: var(--sp-text-muted);
+  letter-spacing: 0.06em;
+}
+
+.sp-source-note[hidden] {
+  display: none;
+}
+
+.sp-controls {
+  display: inline-flex;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+.sp-toggle {
+  font: inherit;
+  font-size: 12px;
+  padding: 4px 12px;
+  border: 1px solid #a5a5a0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--sp-text-muted);
+  cursor: pointer;
+}
+
+.sp-toggle[aria-pressed="true"] {
+  background: var(--sp-text);
+  color: var(--sp-bg);
+  border-color: var(--sp-text);
+}
+
+.sp-toggle:focus-visible {
+  outline: 2px solid var(--sp-cool-deep);
+  outline-offset: 2px;
+}
+
+/* ── 命中区按钮：透明覆盖，约 44×44 CSS px 可聚焦 ── */
+.sp-hit {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0;
+  transform: translate(-50%, -50%);
+  background: transparent;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+.sp-hit:hover {
+  background: rgba(39, 49, 66, 0.05);
+}
+
+/* ── 精确读数提示：实底小卡，按命中点方向避让 ── */
+.sp-tooltip {
+  position: absolute;
+  z-index: 6;
+  transform: translate(-50%, -50%);
+  background: var(--sp-text);
+  color: #f8f7f4;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  line-height: 1.4;
+  white-space: nowrap;
+  pointer-events: none;
+  box-shadow: 0 2px 10px rgba(39, 49, 66, 0.25);
+}
+
+.sp-tooltip[hidden] {
+  display: none;
+}
+
+.sp-tooltip-name {
+  font-weight: 600;
+  margin-right: 6px;
+}
+
+/* 命中点在右侧 → 提示放左侧（朝圆心，不越出卡片），余类推。 */
+.sp-tooltip-left {
+  transform: translate(calc(-100% - 10px), -50%);
+}
+
+.sp-tooltip-right {
+  transform: translate(10px, -50%);
+}
+
+.sp-tooltip-above {
+  transform: translate(-50%, calc(-100% - 10px));
+}
+
+.sp-tooltip-below {
+  transform: translate(-50%, 10px);
+}
+
+/* ── 选中轴强化与精确标记（只改标注层，不动云） ── */
+.sp-radials line.sp-axis-active {
+  opacity: 0.45;
+}
+
+.sp-labels text.sp-label-active {
+  fill: var(--sp-warm-deep);
+  font-weight: 600;
+}
+
+.sp-precise-marker {
+  fill: var(--sp-bg);
+  stroke: var(--sp-warm-deep);
+  stroke-width: 2;
+}
+
+/* ── 数值表（Show values）：非颜色依赖读数 ── */
+.sp-values {
+  margin-top: 16px;
+}
+
+.sp-values[hidden] {
+  display: none;
+}
+
+.sp-values-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 12px;
+  color: var(--sp-text-muted);
+  margin-bottom: 6px;
+}
+
+.sp-updating {
+  color: var(--sp-warm-deep);
+  font-weight: 600;
+}
+
+.sp-updating[hidden] {
+  display: none;
+}
+
+.sp-values-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px; /* 精确数值面板正文 ≥14px（Request.md §6） */
+}
+
+.sp-values-table th,
+.sp-values-table td {
+  text-align: left;
+  padding: 4px 10px 4px 0;
+  border-bottom: 1px solid rgba(39, 49, 66, 0.12);
+}
+
+.sp-values-table th[scope="col"] {
+  color: var(--sp-text-muted);
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.06em;
+}
+
+.sp-values-table td {
+  font-variant-numeric: tabular-nums;
+}
+
+/* ── 轻微呼吸：仅雾层透明度 ±2% 相对（基准 0.98），
+      4 s 单程 ease-in-out 交替 = 约 8 s 完整周期；
+      不改变半径、读数或任何其他层（Request.md §5.5）。 ── */
+.sp-fog-canvas.sp-breathing {
+  animation: sp-fog-breathe 4s ease-in-out infinite alternate;
+}
+
+@keyframes sp-fog-breathe {
+  from {
+    opacity: 0.9996; /* 0.98 × 1.02 */
+  }
+  to {
+    opacity: 0.9604; /* 0.98 × 0.98 */
+  }
+}
+
+/* 页面隐藏时暂停装饰动效（数据管线不受影响）。 */
+.sp-fog-canvas.sp-paused {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sp-fog-canvas.sp-breathing {
+    animation: none;
+    opacity: 1;
+  }
+}
+
+/* ── 视觉隐藏文本（屏幕阅读器专用） ── */
+.sp-visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ── 调试参考轮廓：仅几何核对，不作为最终描边 ── */
+.sp-debug-contour .sp-debug-contour-line {
+  fill: none;
+  stroke: var(--sp-debug-contour);
+  stroke-width: 1.2;
+  stroke-dasharray: 4 4;
+  opacity: 0.65;
+}
+
+.sp-debug-contour circle {
+  fill: none;
+  stroke: var(--sp-debug-contour);
+  stroke-width: 1.2;
+  opacity: 0.85;
+}
+
+/* 焦点可见性基础（P4 命中区按钮沿用）。 */
+.sp-stage :focus-visible {
+  outline: 2px solid var(--sp-cool-deep);
+  outline-offset: 2px;
+}
+
+/* ── 开发者面板（非产品 UI）：预设 / 视图 / 滑杆 / JSON / 流 / 状态 ── */
+.sp-devtools {
+  margin-top: 24px;
+  color: var(--sp-text-muted);
+  font-size: 13px;
+}
+
+.sp-devtools summary {
+  cursor: pointer;
+  padding: 8px 0;
+}
+
+.sp-dev-body {
+  display: grid;
+  gap: 14px;
+  padding: 4px 0 12px;
+  max-width: 480px;
+}
+
+.sp-dev-field {
+  display: grid;
+  gap: 6px;
+}
+
+/* 性能读数（Request.md §7）：云层计算档与绘制成本，500ms 刷新。 */
+.sp-dev-perf {
+  margin: 0;
+  padding: 6px 10px;
+  border: 1px solid rgba(39, 49, 66, 0.18);
+  border-radius: 6px;
+  background: rgba(39, 49, 66, 0.04);
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+  color: var(--sp-text-muted);
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+.sp-dev-label {
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.sp-devtools select,
+.sp-devtools textarea,
+.sp-devtools button,
+.sp-devtools input[type="range"] {
+  font: inherit;
+}
+
+.sp-devtools select {
+  color: var(--sp-text);
+  background: var(--sp-bg);
+  padding: 6px;
+  border: 1px solid #a5a5a0;
+  border-radius: 4px;
+  max-width: 100%;
+}
+
+.sp-dev-sliders {
+  display: grid;
+  gap: 4px;
+}
+
+.sp-dev-slider {
+  display: grid;
+  grid-template-columns: 84px 1fr 36px;
+  align-items: center;
+  gap: 10px;
+}
+
+.sp-dev-slider output {
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+
+.sp-dev-json-input {
+  width: 100%;
+  box-sizing: border-box;
+  font-family: ui-monospace, Consolas, "Courier New", monospace;
+  font-size: 12px;
+  padding: 8px;
+  border: 1px solid #a5a5a0;
+  border-radius: 4px;
+  color: var(--sp-text);
+  background: #fff;
+  resize: vertical;
+}
+
+.sp-dev-json-buttons {
+  display: inline-flex;
+  gap: 8px;
+}
+
+.sp-devtools button {
+  padding: 6px 12px;
+  border: 1px solid #a5a5a0;
+  border-radius: 4px;
+  background: var(--sp-bg);
+  color: var(--sp-text);
+  cursor: pointer;
+}
+
+.sp-dev-json-error {
+  color: var(--sp-warm-deep);
+  font-size: 12px;
+  margin: 6px 0 0;
+}
+
+.sp-dev-json-error[hidden] {
+  display: none;
+}
+
+.sp-dev-stream-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.sp-dev-hint {
+  font-size: 12px;
+}
+
+@media (max-width: 480px) {
+  .scent-profile { --sp-card-padding: 12px; --sp-gap: 12px; }
+  .sp-header h1 { font-size: 25px; }
+  .sp-subtitle { font-size: 9px; letter-spacing: 0.12em; }
+  /* SVG 单位：360px 视口下 stage≈320px，26/640×320 ≈ 13px ≥ 12px 有余量。 */
+  .sp-labels text { font-size: 26px; }
+  .sp-caption { flex-direction: column; gap: 8px; }
+}

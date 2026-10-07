@@ -1,0 +1,58 @@
+{
+  "version": "composition-v1",
+  "templates": [
+    {
+      "id": "C01",
+      "name": "低角度聚合",
+      "modes": ["single", "normal"],
+      "primary_placement": "object",
+      "view": "low angle",
+      "layout": "one compact group with the primary object clearly emphasized"
+    },
+    {
+      "id": "C02",
+      "name": "俯视静物",
+      "modes": ["single", "normal", "dual"],
+      "primary_placement": "all_objects",
+      "view": "top-down",
+      "layout": "a compact arrangement with open space between the scent-bearing forms"
+    },
+    {
+      "id": "C03",
+      "name": "平视静物",
+      "modes": ["single", "normal"],
+      "primary_placement": "object",
+      "view": "front view",
+      "layout": "the primary object forward, with secondary elements close by"
+    },
+    {
+      "id": "C04",
+      "name": "留白近景",
+      "modes": ["single", "normal"],
+      "primary_placement": "object",
+      "view": "close foreground view",
+      "layout": "one clear primary form with generous negative space"
+    },
+    {
+      "id": "C05",
+      "name": "双主体并置",
+      "modes": ["dual"],
+      "primary_placement": "all_objects",
+      "view": "slightly elevated view",
+      "layout": "two equally important primary forms grouped side by side"
+    },
+    {
+      "id": "C06",
+      "name": "环境主导",
+      "modes": ["single", "normal", "dual"],
+      "primary_placement": "includes_environment",
+      "view": "low oblique view",
+      "layout": "the scent-bearing environment stays prominent; any co-primary object shares attention rather than replacing it"
+    }
+  ],
+  "anchor_positions": ["center", "lower_left", "lower_right"],
+  "fallbacks": {
+    "object": "plain grouped still life with a neutral background",
+    "environment": "one simple scent-bearing environment with no invented foreground subject"
+  }
+}

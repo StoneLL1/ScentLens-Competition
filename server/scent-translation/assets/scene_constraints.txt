@@ -1,0 +1,8 @@
+Use only the scent-bearing motifs specified in the scene. Do not introduce
+additional fruit, flowers, vegetation, wood, food, drinks, smoke, rain, ocean,
+or decorative scent sources, except when the selected motif phrase itself names
+an authorized memory-anchor object (mulled wine, orange pomander, sharpened
+pencil, vanilla ice cream, vanilla cream). Any necessary unspecified support or background
+must remain plain and indeterminate. Keep all selected forms in one coherent
+scene. Do not add text labels, charts, panels, logos, or watermarks. Avoid tiny
+scattered objects and highly detailed grass blades, petals, seeds, or wood grain.

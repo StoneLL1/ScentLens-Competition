@@ -1,0 +1,174 @@
+{
+  "catalog_version": "scent-motifs-v3",
+  "motif_defaults": {"enabled": true, "weight": 1, "shape_group_cost": 1, "requires_scent_ids": [], "primary_safe": false},
+  "scents": [
+    {
+      "id": "lemon",
+      "preferred_placement": "object",
+      "recognition_hint": "保留柠檬整体轮廓或典型切面；不依赖细小果粒。",
+      "recognition_hint_en": "retain the lemon outline and one simple cut-face or whole-fruit region",
+      "color_hint": "pale sunlit yellow with one brighter cut-face region",
+      "motifs": [
+        {"id": "lemon_S01", "band": "Strong", "phrase": "one whole lemon", "placements": ["object"], "primary_safe": true},
+        {"id": "lemon_S02", "band": "Strong", "phrase": "one lemon half with its cut face visible", "placements": ["object"], "primary_safe": true},
+        {"id": "lemon_S03", "band": "Strong", "phrase": "two whole lemons grouped closely", "placements": ["object"], "primary_safe": true},
+        {"id": "lemon_S04", "band": "Strong", "phrase": "one partially peeled lemon retaining its full outline", "placements": ["object"], "primary_safe": true},
+        {"id": "lemon_M01", "band": "Medium", "phrase": "one thick lemon slice", "placements": ["object"], "primary_safe": true},
+        {"id": "lemon_M02", "band": "Medium", "phrase": "two overlapping lemon slices", "placements": ["object"], "primary_safe": true},
+        {"id": "lemon_M03", "band": "Medium", "phrase": "one lemon wedge", "placements": ["object"], "primary_safe": true},
+        {"id": "lemon_M04", "band": "Medium", "phrase": "one lemon half beside a single thick slice", "placements": ["object"], "primary_safe": true},
+        {"id": "lemon_T01", "band": "Subtle", "phrase": "one curved strip of lemon peel", "placements": ["object"], "primary_safe": false},
+        {"id": "lemon_T02", "band": "Subtle", "phrase": "one loose curl of lemon peel", "placements": ["object"], "primary_safe": false},
+        {"id": "lemon_T03", "band": "Subtle", "phrase": "one small lemon wedge", "placements": ["object"], "primary_safe": false},
+        {"id": "lemon_T04", "band": "Subtle", "phrase": "two short pieces of lemon peel grouped together", "placements": ["object"], "primary_safe": false}
+      ]
+    },
+    {
+      "id": "rose",
+      "preferred_placement": "object",
+      "recognition_hint": "用聚合花冠或少量宽花瓣表达玫瑰；不添加其他花卉。",
+      "recognition_hint_en": "keep the rose readable as a clustered bloom or a few broad petals",
+      "color_hint": "soft muted pink to warm red petal masses",
+      "motifs": [
+        {"id": "rose_S01", "band": "Strong", "phrase": "one open rose bloom", "placements": ["object"], "primary_safe": true},
+        {"id": "rose_S02", "band": "Strong", "phrase": "two rose blooms grouped closely", "placements": ["object"], "primary_safe": true},
+        {"id": "rose_S03", "band": "Strong", "phrase": "one compact cluster of three rose blooms", "placements": ["object"], "primary_safe": true},
+        {"id": "rose_S04", "band": "Strong", "phrase": "one partially opened rose bloom", "placements": ["object"], "primary_safe": true},
+        {"id": "rose_M01", "band": "Medium", "phrase": "one rose bloom viewed from the side", "placements": ["object"], "primary_safe": true},
+        {"id": "rose_M02", "band": "Medium", "phrase": "one short-stemmed rose lying sideways", "placements": ["object"], "primary_safe": true},
+        {"id": "rose_M03", "band": "Medium", "phrase": "two compact rose heads", "placements": ["object"], "primary_safe": true},
+        {"id": "rose_M04", "band": "Medium", "phrase": "one rose bloom with two loose petals", "placements": ["object"], "primary_safe": true},
+        {"id": "rose_T01", "band": "Subtle", "phrase": "one broad rose petal", "placements": ["object"], "primary_safe": false},
+        {"id": "rose_T02", "band": "Subtle", "phrase": "two overlapping rose petals", "placements": ["object"], "primary_safe": false},
+        {"id": "rose_T03", "band": "Subtle", "phrase": "three rose petals grouped in one small patch", "placements": ["object"], "primary_safe": false},
+        {"id": "rose_T04", "band": "Subtle", "phrase": "one detached outer rose petal curled inward", "placements": ["object"], "primary_safe": false}
+      ]
+    },
+    {
+      "id": "lavender",
+      "preferred_placement": "flexible",
+      "recognition_hint": "保留薰衣草花穗的短纵向轮廓；不描绘大量小花。",
+      "recognition_hint_en": "keep lavender readable as a few short vertical spike silhouettes",
+      "color_hint": "muted violet spike silhouettes",
+      "motifs": [
+        {"id": "lavender_S01", "band": "Strong", "phrase": "one compact bundle of lavender spikes", "placements": ["object"], "primary_safe": true},
+        {"id": "lavender_S02", "band": "Strong", "phrase": "three upright lavender flower spikes grouped closely", "placements": ["object"], "primary_safe": true},
+        {"id": "lavender_S03", "band": "Strong", "phrase": "one rounded cluster of lavender flower spikes", "placements": ["object"], "primary_safe": true},
+        {"id": "lavender_S04", "band": "Strong", "phrase": "one broad lavender patch reduced to a few joined violet forms", "placements": ["environment"], "primary_safe": true},
+        {"id": "lavender_M01", "band": "Medium", "phrase": "two short lavender stems", "placements": ["object"], "primary_safe": true},
+        {"id": "lavender_M02", "band": "Medium", "phrase": "one small lavender bundle lying sideways", "placements": ["object"], "primary_safe": true},
+        {"id": "lavender_M03", "band": "Medium", "phrase": "one loose cluster of three lavender spikes", "placements": ["object"], "primary_safe": true},
+        {"id": "lavender_M04", "band": "Medium", "phrase": "one contained patch of lavender with simple upright silhouettes", "placements": ["environment"], "primary_safe": true},
+        {"id": "lavender_T01", "band": "Subtle", "phrase": "one short lavender flower spike", "placements": ["object"], "primary_safe": false},
+        {"id": "lavender_T02", "band": "Subtle", "phrase": "two small lavender spikes placed together", "placements": ["object"], "primary_safe": false},
+        {"id": "lavender_T03", "band": "Subtle", "phrase": "one compact detached lavender flower head", "placements": ["object"], "primary_safe": false},
+        {"id": "lavender_T04", "band": "Subtle", "phrase": "one small peripheral patch of lavender", "placements": ["environment"], "primary_safe": false}
+      ]
+    },
+    {
+      "id": "grass",
+      "preferred_placement": "environment",
+      "recognition_hint": "以连续绿色草地和少量低矮外轮廓表达青草；不要生成巨大单根草叶、细碎草纹或自动加露水。",
+      "recognition_hint_en": "one continuous grassy green field without individual blades",
+      "color_hint": "one continuous muted green field",
+      "motifs": [
+        {"id": "grass_S01", "band": "Strong", "phrase": "one broad continuous grassy field", "placements": ["environment"], "primary_safe": true},
+        {"id": "grass_S02", "band": "Strong", "phrase": "one gently rounded grassy hill filling most of the setting", "placements": ["environment"], "primary_safe": true},
+        {"id": "grass_S03", "band": "Strong", "phrase": "one wide grass-covered ground plane", "placements": ["environment"], "primary_safe": true},
+        {"id": "grass_S04", "band": "Strong", "phrase": "one broad grassy bank with a simple low silhouette", "placements": ["environment"], "primary_safe": true},
+        {"id": "grass_M01", "band": "Medium", "phrase": "one contained patch of grass beneath the objects", "placements": ["environment"], "primary_safe": true},
+        {"id": "grass_M02", "band": "Medium", "phrase": "one low grassy mound beside the objects", "placements": ["environment"], "primary_safe": true},
+        {"id": "grass_M03", "band": "Medium", "phrase": "one shallow grass-covered slope within the setting", "placements": ["environment"], "primary_safe": true},
+        {"id": "grass_M04", "band": "Medium", "phrase": "one continuous strip of lawn beneath the objects", "placements": ["environment"], "primary_safe": true},
+        {"id": "grass_T01", "band": "Subtle", "phrase": "one small patch of grass beneath the main group", "placements": ["environment"], "primary_safe": false},
+        {"id": "grass_T02", "band": "Subtle", "phrase": "one short grassy edge along the lower foreground", "placements": ["environment"], "primary_safe": false},
+        {"id": "grass_T03", "band": "Subtle", "phrase": "one small low grass-covered mound nearby", "placements": ["environment"], "primary_safe": false},
+        {"id": "grass_T04", "band": "Subtle", "phrase": "one narrow patch of grass beside the main object", "placements": ["environment"], "primary_safe": false}
+      ]
+    },
+    {
+      "id": "peach",
+      "preferred_placement": "object",
+      "recognition_hint": "保留桃子的圆润轮廓、中央凹痕或简化切面；不添加枝叶和桃花。",
+      "recognition_hint_en": "keep the peach readable by its rounded outline or one simple cut face",
+      "color_hint": "soft warm orange-pink blush",
+      "motifs": [
+        {"id": "peach_S01", "band": "Strong", "phrase": "one whole peach", "placements": ["object"], "primary_safe": true},
+        {"id": "peach_S02", "band": "Strong", "phrase": "one peach half with a simplified central stone", "placements": ["object"], "primary_safe": true},
+        {"id": "peach_S03", "band": "Strong", "phrase": "two whole peaches grouped closely", "placements": ["object"], "primary_safe": true},
+        {"id": "peach_S04", "band": "Strong", "phrase": "one whole peach beside one peach half", "placements": ["object"], "primary_safe": true},
+        {"id": "peach_M01", "band": "Medium", "phrase": "one thick peach wedge", "placements": ["object"], "primary_safe": true},
+        {"id": "peach_M02", "band": "Medium", "phrase": "two peach halves grouped closely", "placements": ["object"], "primary_safe": true},
+        {"id": "peach_M03", "band": "Medium", "phrase": "one peach quarter with its curved skin visible", "placements": ["object"], "primary_safe": true},
+        {"id": "peach_M04", "band": "Medium", "phrase": "two broad peach slices overlapping slightly", "placements": ["object"], "primary_safe": true},
+        {"id": "peach_T01", "band": "Subtle", "phrase": "one small peach slice", "placements": ["object"], "primary_safe": false},
+        {"id": "peach_T02", "band": "Subtle", "phrase": "one small peach wedge", "placements": ["object"], "primary_safe": false},
+        {"id": "peach_T03", "band": "Subtle", "phrase": "one curved segment of peach flesh with its skin attached", "placements": ["object"], "primary_safe": false},
+        {"id": "peach_T04", "band": "Subtle", "phrase": "two small peach pieces grouped closely", "placements": ["object"], "primary_safe": false}
+      ]
+    },
+    {
+      "id": "clove",
+      "preferred_placement": "object",
+      "recognition_hint": "clove 仅指干燥丁香香料花蕾：钉状、短杆、圆头；不是紫丁香花。",
+      "recognition_hint_en": "dried clove buds with a round head and short stalk, not lilac flowers",
+      "color_hint": "warm deep reddish-brown forms with soft amber highlights against a muted cream backdrop",
+      "motifs": [
+        {"id": "clove_S01", "band": "Strong", "phrase": "one complete dried clove bud with a round head and short stalk", "placements": ["object"], "primary_safe": true},
+        {"id": "clove_S02", "band": "Strong", "phrase": "a small glass mug of dark mulled wine with three clove buds floating on top", "placements": ["object"], "primary_safe": true, "memory_anchor": "mulled wine"},
+        {"id": "clove_S03", "band": "Strong", "phrase": "a small clear spice jar half-filled with dark dried clove buds", "placements": ["object"], "primary_safe": true},
+        {"id": "clove_S04", "band": "Strong", "phrase": "two crossed dried clove buds with visible round heads", "placements": ["object"], "primary_safe": true},
+        {"id": "clove_M01", "band": "Medium", "phrase": "one orange pomander studded with dark clove buds", "placements": ["object"], "primary_safe": true, "memory_anchor": "orange pomander"},
+        {"id": "clove_M02", "band": "Medium", "phrase": "two dried clove buds lying parallel", "placements": ["object"], "primary_safe": true},
+        {"id": "clove_M03", "band": "Medium", "phrase": "a pinch of dried clove buds scattered beside a small open spice jar", "placements": ["object"], "primary_safe": true},
+        {"id": "clove_M04", "band": "Medium", "phrase": "one upright dried clove bud beside one horizontal clove bud", "placements": ["object"], "primary_safe": true},
+        {"id": "clove_T01", "band": "Subtle", "phrase": "one small complete dried clove bud", "placements": ["object"], "primary_safe": false},
+        {"id": "clove_T02", "band": "Subtle", "phrase": "two small dried clove buds close together", "placements": ["object"], "primary_safe": false},
+        {"id": "clove_T03", "band": "Subtle", "phrase": "one short dried clove bud with its rounded head visible", "placements": ["object"], "primary_safe": false},
+        {"id": "clove_T04", "band": "Subtle", "phrase": "one compact pair of dried clove buds seen from the side", "placements": ["object"], "primary_safe": false}
+      ]
+    },
+    {
+      "id": "cedarwood",
+      "preferred_placement": "flexible",
+      "recognition_hint": "表达雪松木材而不是默认画森林；用木块、木段或平面轮廓，不依赖细木纹。",
+      "recognition_hint_en": "broad brown wooden forms without fine grain, not a forest",
+      "color_hint": "cool grey-brown wooden tones with a fresh pencil-shaving lightness",
+      "motifs": [
+        {"id": "cedarwood_S01", "band": "Strong", "phrase": "one solid cedarwood block", "placements": ["object"], "primary_safe": true},
+        {"id": "cedarwood_S02", "band": "Strong", "phrase": "one short cedarwood log with its cut end visible", "placements": ["object"], "primary_safe": true},
+        {"id": "cedarwood_S03", "band": "Strong", "phrase": "one freshly sharpened cedarwood pencil beside a loose curl of shaving", "placements": ["object"], "primary_safe": true, "memory_anchor": "sharpened pencil"},
+        {"id": "cedarwood_S04", "band": "Strong", "phrase": "one broad cedarwood slab", "placements": ["object", "environment"], "primary_safe": true},
+        {"id": "cedarwood_M01", "band": "Medium", "phrase": "one short cedarwood plank", "placements": ["object", "environment"], "primary_safe": true},
+        {"id": "cedarwood_M02", "band": "Medium", "phrase": "two cedarwood blocks stacked compactly", "placements": ["object"], "primary_safe": true},
+        {"id": "cedarwood_M03", "band": "Medium", "phrase": "a small loose pile of fresh cedarwood pencil shavings with one long curled ribbon", "placements": ["object"], "primary_safe": true},
+        {"id": "cedarwood_M04", "band": "Medium", "phrase": "one flat cedarwood board section", "placements": ["object", "environment"], "primary_safe": true},
+        {"id": "cedarwood_T01", "band": "Subtle", "phrase": "two small cedarwood chips grouped together", "placements": ["object"], "primary_safe": false},
+        {"id": "cedarwood_T02", "band": "Subtle", "phrase": "one long curled cedarwood shaving like a fresh pencil shaving", "placements": ["object"], "primary_safe": false},
+        {"id": "cedarwood_T03", "band": "Subtle", "phrase": "one small flat cedarwood offcut", "placements": ["object", "environment"], "primary_safe": false},
+        {"id": "cedarwood_T04", "band": "Subtle", "phrase": "one short cedarwood splinter with a clear outline", "placements": ["object"], "primary_safe": false}
+      ]
+    },
+    {
+      "id": "vanilla",
+      "preferred_placement": "object",
+      "recognition_hint": "以深色细长香草荚表达；不自动加入蛋糕、冰淇淋、牛奶或其他花朵。",
+      "recognition_hint_en": "dark slender vanilla pods, not cake or ice cream",
+      "color_hint": "glossy near-black pods set against a soft warm cream backdrop",
+      "motifs": [
+        {"id": "vanilla_S01", "band": "Strong", "phrase": "one whole gently curved vanilla pod", "placements": ["object"], "primary_safe": true},
+        {"id": "vanilla_S02", "band": "Strong", "phrase": "one soft scoop of vanilla ice cream with a split vanilla pod resting against it", "placements": ["object"], "primary_safe": true, "memory_anchor": "vanilla ice cream"},
+        {"id": "vanilla_S03", "band": "Strong", "phrase": "one compact bundle of three vanilla pods", "placements": ["object"], "primary_safe": true},
+        {"id": "vanilla_S04", "band": "Strong", "phrase": "one split vanilla pod revealing its soft dark seed paste", "placements": ["object"], "primary_safe": true},
+        {"id": "vanilla_M01", "band": "Medium", "phrase": "two vanilla pods lying parallel", "placements": ["object"], "primary_safe": true},
+        {"id": "vanilla_M02", "band": "Medium", "phrase": "a small cup of vanilla bean cream with visible dark specks", "placements": ["object"], "primary_safe": true, "memory_anchor": "vanilla cream"},
+        {"id": "vanilla_M03", "band": "Medium", "phrase": "one bent vanilla pod with its full outline visible", "placements": ["object"], "primary_safe": true},
+        {"id": "vanilla_M04", "band": "Medium", "phrase": "a small bundle of vanilla pods tied loosely, one split to show its seeds", "placements": ["object"], "primary_safe": true},
+        {"id": "vanilla_T01", "band": "Subtle", "phrase": "one short vanilla pod", "placements": ["object"], "primary_safe": false},
+        {"id": "vanilla_T02", "band": "Subtle", "phrase": "two short vanilla pod segments grouped together", "placements": ["object"], "primary_safe": false},
+        {"id": "vanilla_T03", "band": "Subtle", "phrase": "one short vanilla pod segment with a few dark seeds visible at the cut end", "placements": ["object"], "primary_safe": false},
+        {"id": "vanilla_T04", "band": "Subtle", "phrase": "one short split vanilla pod segment", "placements": ["object"], "primary_safe": false}
+      ]
+    }
+  ]
+}

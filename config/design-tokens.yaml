@@ -1,0 +1,275 @@
+name: 闻见 ScentLens
+description: 从轻盈的气味采集界面，进入属于个人的气味作品画廊。
+colors:
+  primary: '#5738E0'
+  canvas: '#FDFDFE'
+  ink: '#000000'
+  ink-secondary: '#000000B8'
+  white: '#FFFFFF'
+  hero-surface: rgba(255,255,255,0.46)
+  panel-surface: rgba(255,255,255,0.86)
+  sheet-surface: rgba(255,255,255,0.62)
+  gallery-button-surface: rgba(255,255,255,0.25)
+  hero-border: rgba(255,255,255,0.82)
+  panel-border: rgba(255,255,255,0.86)
+  sheet-border: rgba(255,255,255,0.78)
+  cta-start: '#EEF4FF'
+  cta-end: '#EAE6FF'
+  cta-border: rgba(214,219,255,0.92)
+  nav-border: rgba(199,209,255,0.88)
+  reading-start: '#FFF6FB'
+  reading-middle: '#FDFDFF'
+  reading-end: '#F1F6FF'
+  gallery-canvas: '#F6F4EE'
+  gallery-text: rgba(31,28,23,0.96)
+  gallery-body: rgba(31,28,23,0.70)
+  gallery-meta: rgba(31,28,23,0.58)
+  on-artwork: rgba(255,255,255,0.96)
+  on-artwork-muted: rgba(255,255,255,0.68)
+  analysis-text: rgba(31,23,56,0.96)
+  analysis-label: rgba(51,43,77,0.82)
+  analysis-muted: rgba(51,43,77,0.62)
+  analysis-track: rgba(48,36,97,0.12)
+  signal-indigo: '#451FD1'
+  signal-ice: '#73C2FF'
+  signal-coral: '#FF6E57'
+  nav-start: '#F6F9FF'
+  nav-middle: '#E9E4FF'
+  nav-end: '#F1F6FF'
+  chrome-ink: '#13121F'
+  nav-active-surface: rgba(255,255,255,0.76)
+  nav-active-border: rgba(255,255,255,0.92)
+  collection-start: '#FEFCF6'
+  collection-middle: '#FBF9FE'
+  collection-end: '#EDF6FF'
+  collection-muted: '#575463'
+  collection-indigo: rgba(61,46,184,0.17)
+  collection-ice: rgba(158,209,255,0.20)
+  category-active: rgba(255,255,255,0.72)
+  category-border: rgba(255,255,255,0.84)
+  profile-surface: rgba(255,255,255,0.48)
+  profile-border: rgba(255,255,255,0.80)
+  profile-muted: '#5C596B'
+  profile-divider: rgba(163,166,189,0.22)
+  device-online: '#3DB873'
+typography:
+  brand-display:
+    fontFamily: Noto Sans SC
+    fontSize: 40px
+    fontWeight: 700
+    lineHeight: 60px
+    letterSpacing: 0.15em
+  screen-title:
+    fontFamily: Noto Sans SC
+    fontSize: 28px
+    fontWeight: 700
+  card-title:
+    fontFamily: Noto Sans SC
+    fontSize: 14px
+    fontWeight: 500
+  body:
+    fontFamily: Noto Sans SC
+    fontSize: 13px
+    fontWeight: 400
+  body-small:
+    fontFamily: Noto Sans SC
+    fontSize: 11px
+    fontWeight: 400
+  eyebrow:
+    fontFamily: SF Pro
+    fontSize: 10px
+    fontWeight: 700
+    letterSpacing: 0.18em
+  technical:
+    fontFamily: SF Pro
+    fontSize: 10px
+    fontWeight: 700
+    letterSpacing: 0.12em
+  signal-number:
+    fontFamily: SF Pro
+    fontSize: 38px
+    fontWeight: 510
+  signal-state:
+    fontFamily: Noto Sans SC
+    fontSize: 12px
+    fontWeight: 500
+  artwork-title:
+    fontFamily: Noto Sans SC
+    fontSize: 25px
+    fontWeight: 700
+    lineHeight: 34px
+  artwork-meta:
+    fontFamily: SF Pro
+    fontSize: 10px
+    fontWeight: 590
+    letterSpacing: 0.13em
+  analysis-artwork-title:
+    fontFamily: Noto Sans SC
+    fontSize: 27px
+    fontWeight: 700
+    lineHeight: 34px
+  analysis-heading:
+    fontFamily: Noto Sans SC
+    fontSize: 22px
+    fontWeight: 700
+    lineHeight: 28px
+  analysis-body:
+    fontFamily: Inter
+    fontSize: 12px
+    fontWeight: 400
+    lineHeight: 18px
+  analysis-eyebrow:
+    fontFamily: Inter
+    fontSize: 10px
+    fontWeight: 500
+    lineHeight: 14px
+  analysis-note:
+    fontFamily: Inter
+    fontSize: 11px
+    fontWeight: 400
+    lineHeight: 16px
+  dimension-label:
+    fontFamily: Inter
+    fontSize: 11px
+    fontWeight: 500
+  dimension-value:
+    fontFamily: Noto Sans SC
+    fontSize: 12px
+    fontWeight: 700
+  sheet-title:
+    fontFamily: Noto Sans SC
+    fontSize: 14px
+    fontWeight: 500
+    lineHeight: 20px
+  collection-title:
+    fontFamily: Noto Sans SC
+    fontSize: 22px
+    fontWeight: 700
+    lineHeight: 30px
+  featured-title:
+    fontFamily: Noto Sans SC
+    fontSize: 20px
+    fontWeight: 700
+    lineHeight: 28px
+  collection-eyebrow:
+    fontFamily: Inter
+    fontSize: 9px
+    fontWeight: 500
+    lineHeight: 14px
+    letterSpacing: 0.16em
+  management-title:
+    fontFamily: Noto Sans SC
+    fontSize: 27px
+    fontWeight: 700
+    lineHeight: 34px
+  management-eyebrow:
+    fontFamily: Inter
+    fontSize: 9px
+    fontWeight: 500
+    lineHeight: 14px
+    letterSpacing: 0.12em
+  stat-value:
+    fontFamily: Noto Sans SC
+    fontSize: 21px
+    fontWeight: 700
+    lineHeight: 28px
+  management-caption:
+    fontFamily: Noto Sans SC
+    fontSize: 10px
+    fontWeight: 400
+    lineHeight: 16px
+rounded:
+  hairline: 2px
+  compact: 16px
+  panel: 24px
+  pill: 26px
+  hero: 32px
+  full: 999px
+  category: 18px
+  stack: 28px
+  featured: 30px
+spacing:
+  2xs: 4px
+  xs: 8px
+  sm: 12px
+  md: 16px
+  hero-inset: 20px
+  signal-inset: 22px
+  lg: 24px
+  screen: 30px
+  xl: 32px
+  card-inset: 18px
+components:
+  button-primary:
+    textColor: '{colors.ink}'
+    typography: '{typography.card-title}'
+    rounded: '{rounded.pill}'
+    height: 44px
+    width: 118px
+  button-secondary:
+    backgroundColor: '{colors.panel-surface}'
+    textColor: '{colors.ink}'
+    typography: '{typography.card-title}'
+    rounded: '{rounded.pill}'
+    height: 52px
+    width: 342px
+  hero-card:
+    backgroundColor: '{colors.hero-surface}'
+    rounded: '{rounded.hero}'
+    padding: 20px
+    width: 342px
+    height: 228px
+  guidance-card:
+    backgroundColor: '{colors.panel-surface}'
+    rounded: '{rounded.panel}'
+    width: 342px
+    height: 76px
+  bottom-navigation:
+    textColor: '{colors.chrome-ink}'
+    rounded: '{rounded.hero}'
+    width: 342px
+    height: 64px
+  analysis-sheet-peek:
+    backgroundColor: '{colors.sheet-surface}'
+    rounded: '{rounded.pill}'
+    width: 354px
+    height: 105px
+  dimension-track:
+    backgroundColor: '{colors.analysis-track}'
+    rounded: '{rounded.hairline}'
+    width: 342px
+    height: 4px
+  dimension-value:
+    backgroundColor: '{colors.primary}'
+    rounded: '{rounded.hairline}'
+    height: 4px
+  nav-active:
+    backgroundColor: '{colors.nav-active-surface}'
+    textColor: '{colors.chrome-ink}'
+    rounded: '{rounded.full}'
+    size: 49px
+  category-active:
+    backgroundColor: '{colors.category-active}'
+    textColor: '{colors.chrome-ink}'
+    rounded: '{rounded.category}'
+    padding: 8px 16px
+    height: 31px
+  collection-featured:
+    rounded: '{rounded.featured}'
+    width: 342px
+    height: 388px
+  profile-card:
+    backgroundColor: '{colors.profile-surface}'
+    rounded: '{rounded.stack}'
+    width: 342px
+    height: 122px
+  profile-stats:
+    backgroundColor: '{colors.profile-surface}'
+    rounded: '{rounded.panel}'
+    width: 342px
+    height: 78px
+  device-card:
+    backgroundColor: '{colors.profile-surface}'
+    rounded: '{rounded.panel}'
+    width: 342px
+    height: 78px

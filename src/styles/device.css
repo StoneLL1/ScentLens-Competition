@@ -1,0 +1,32 @@
+.device-screen { background: radial-gradient(ellipse at 85% 28%, #edeafa80, transparent 60%), var(--color-canvas); }
+.device-content { margin: 44px var(--gutter) 0; padding-bottom: calc(var(--safe-bottom) + 28px); text-align: center; }
+.device-content h1 { font-size: var(--type-screen-title); line-height: 1.5; }
+.device-lead { color: var(--color-profile-muted); margin-top: 8px; font-size: .8125rem; line-height: 1.7; }
+.device-emblem { width: 100px; margin: 32px auto 20px; }
+.device-emblem svg { width: 100%; stroke: var(--color-primary); stroke-width: 1.5; }
+.device-connection { display: flex; justify-content: center; align-items: center; gap: 7px; color: var(--color-profile-muted); font-size: .8125rem; }
+.device-connection i { width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
+.device-connection[data-connected=true] i { background: var(--color-device-online); }
+.device-content h2 { font-size: 1.125rem; font-weight: 500; margin: 28px 0 8px; }
+.device-description { font-size: .875rem; line-height: 1.8; color: var(--color-profile-muted); max-width: 30ch; margin-inline: auto; }
+.device-content > .button { width: 100%; margin-top: 24px; }
+.device-content > .text-action { display: flex; width: fit-content; margin-inline: auto; }
+.device-list { margin-top: 22px; }
+.device-choice { width: 100%; padding: 18px 6px; border: 0; border-bottom: 1px solid var(--color-profile-divider); display: flex; gap: 16px; justify-content: space-between; align-items: center; text-align: left; font-size: .875rem; color: var(--color-ink); background: transparent; }
+.device-choice span:first-child { overflow-wrap: anywhere; }
+.device-choice span:last-child { flex-shrink: 0; color: var(--color-primary); }
+.device-error, .pocket-trial .device-error { padding: 14px 16px; margin-top: 16px; border-radius: 16px; color: #664324; background: #f8f0e6; font-size: .875rem; line-height: 1.7; text-align: left; }
+.device-note, .pocket-trial .device-note { color: var(--color-profile-muted); font-size: .8125rem; line-height: 1.7; margin-top: 16px; }
+.device-diagnostics { text-align: left; margin-top: 24px; border-top: 1px solid var(--color-profile-divider); padding-top: 12px; color: var(--color-profile-muted); font-size: .8125rem; }
+.device-diagnostics summary { padding-block: 12px; cursor: pointer; }
+.device-diagnostics dl { display: grid; grid-template-columns: auto 1fr; gap: 12px; margin-block: 12px; }
+.device-diagnostics dd { margin: 0; overflow-wrap: anywhere; text-align: right; }
+.device-inline { display: inline-block; color: var(--color-primary); font-size: .8125rem; margin-top: 12px; min-height: 44px; padding-block: 10px; text-underline-offset: 4px; }
+.pocket-trial .trial-illustration { margin-top: 8px; }
+.pocket-trial .trial-disclosure { margin-block: 18px; }
+.passive-notice { padding: 14px var(--gutter); color: var(--color-analysis-text); background: #f3effb; font-size: .8125rem; line-height: 1.7; }
+.passive-notice .text-action { margin-left: 12px; }
+@media (max-height: 760px) { .device-content { margin-top: 24px; } .device-emblem { width: 76px; margin-block: 18px; } }
+/* Keep the instruction and its action separate, as on the reading reference. */
+.pocket-trial .trial-content > .button { margin-top: 20px; }
+.device-error, .device-note { overflow-wrap: anywhere; }

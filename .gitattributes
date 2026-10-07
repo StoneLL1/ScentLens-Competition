@@ -1,0 +1,10 @@
+* text=auto
+*.png binary
+*.jpg binary
+*.woff2 binary
+src/styles/tokens.css text eol=lf
+/public/assets/** -text
+/public/assets/manifest.json text eol=lf
+/src/vendor/scent-profile/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/server/scent-translation/assets/** -text
+/licenses/** -text

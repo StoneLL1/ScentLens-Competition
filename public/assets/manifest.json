@@ -1,0 +1,323 @@
+{
+  "version": 1,
+  "date": "2026-10-02",
+  "notes": "Figma and hardware copies supplied by project owner; no inferred third-party redistribution license. Presets are not live generated results.",
+  "assets": [
+    {
+      "id": "nav-home",
+      "path": "/assets/icons/nav-home.svg",
+      "source": "design-context/assets/icons/nav-home.svg",
+      "sha256": "2fdd468fb3bcd90f13e872dfd032b9ad320c78c9866f5b71b7b588098822cea4",
+      "bytes": 189,
+      "nodeIds": [
+        "418:942",
+        "418:1257",
+        "418:1149"
+      ]
+    },
+    {
+      "id": "nav-capture",
+      "path": "/assets/icons/nav-capture.svg",
+      "source": "design-context/assets/icons/nav-capture.svg",
+      "sha256": "bb9ecdef92a13b1e2315efbccd499e69133a34952d6df199738824ef923a7bcb",
+      "bytes": 403,
+      "nodeIds": [
+        "418:946",
+        "418:1261",
+        "418:1153"
+      ]
+    },
+    {
+      "id": "nav-gallery-tree",
+      "path": "/assets/icons/nav-gallery-tree.svg",
+      "source": "design-context/assets/icons/nav-gallery-tree.svg",
+      "sha256": "54cc0045edde0e4882992eb3950e68f5447783317b77794856355b3903bd07dc",
+      "bytes": 555,
+      "nodeIds": [
+        "418:951",
+        "418:1267",
+        "418:1158"
+      ]
+    },
+    {
+      "id": "nav-profile",
+      "path": "/assets/icons/nav-profile.svg",
+      "source": "design-context/assets/icons/nav-profile.svg",
+      "sha256": "2b933619fb5b60c04e3898d9e3f2091b7a5c3e70f8c78f2252e475be556e0c12",
+      "bytes": 446,
+      "nodeIds": [
+        "418:957",
+        "418:1273",
+        "418:1165"
+      ]
+    },
+    {
+      "id": "home-dial-surface",
+      "path": "/assets/decorative/home-dial-surface.svg",
+      "source": "design-context/assets/decorative/home-dial-surface.svg",
+      "sha256": "0d30027d3c91e9be62bcc8d21d994d3974daa57fdc675f3a4200a2e86d4f9079",
+      "bytes": 1219,
+      "nodeIds": [
+        "418:965"
+      ]
+    },
+    {
+      "id": "artwork-frame-result",
+      "path": "/assets/frames/artwork-frame-result.svg",
+      "source": "design-context/assets/frames/artwork-frame-result.svg",
+      "sha256": "a674141e38cc59caaa4a731bbb66790d43d005c517c76d943e06bb372ad504ad",
+      "bytes": 3423,
+      "nodeIds": [
+        "378:932"
+      ]
+    },
+    {
+      "id": "artwork-frame-analysis",
+      "path": "/assets/frames/artwork-frame-analysis.svg",
+      "source": "design-context/assets/frames/artwork-frame-analysis.svg",
+      "sha256": "2e4ad569396b928b830b17bde816aee8959016aa4d23090f04a29b066008e7e8",
+      "bytes": 3303,
+      "nodeIds": [
+        "378:954"
+      ]
+    },
+    {
+      "id": "launch-fluid",
+      "path": "/assets/brand/launch-fluid.png",
+      "source": "design-context/assets/raster/launch-fluid.png",
+      "sha256": "6523ee3dad48ac875aa6e87f083098882c91cc084d64a8a21d6c4617ad384737",
+      "bytes": 1173085,
+      "nodeIds": [
+        "378:756"
+      ]
+    },
+    {
+      "id": "gallery-frame-top",
+      "path": "/assets/frames/gallery-frame-top.svg",
+      "source": "design-context/assets/frames/gallery-frame-top.svg",
+      "sha256": "459be786198206bf4bfbc4f9551f429f225084554507bd89cdc7f4d5c23bc404",
+      "bytes": 620,
+      "nodeIds": [
+        "418:1279"
+      ]
+    },
+    {
+      "id": "gallery-frame-bottom",
+      "path": "/assets/frames/gallery-frame-bottom.svg",
+      "source": "design-context/assets/frames/gallery-frame-bottom.svg",
+      "sha256": "d56605ebd8677391f73cb8cbed33d65288f0348082c4b5be5e101050b532e5f9",
+      "bytes": 626,
+      "nodeIds": [
+        "418:1280"
+      ]
+    },
+    {
+      "id": "gallery-frame-left",
+      "path": "/assets/frames/gallery-frame-left.svg",
+      "source": "design-context/assets/frames/gallery-frame-left.svg",
+      "sha256": "0a2fbe1c59452ab6466962b12153f729cda05cb12d2042c18626429e9989e13e",
+      "bytes": 619,
+      "nodeIds": [
+        "418:1281"
+      ]
+    },
+    {
+      "id": "gallery-frame-right",
+      "path": "/assets/frames/gallery-frame-right.svg",
+      "source": "design-context/assets/frames/gallery-frame-right.svg",
+      "sha256": "a5f6ab6e4c43795436c0df553d27fc8d162e2ec948b865fde1746f3b81a6313d",
+      "bytes": 625,
+      "nodeIds": [
+        "418:1282"
+      ]
+    },
+    {
+      "id": "gallery-frame-trim",
+      "path": "/assets/frames/gallery-frame-trim.svg",
+      "source": "design-context/assets/frames/gallery-frame-trim.svg",
+      "sha256": "6cc9ca7aff63f1b830929ecf09d89aea96330dc3c300bfa4bc90d6266590da35",
+      "bytes": 288,
+      "nodeIds": [
+        "418:1283"
+      ]
+    },
+    {
+      "id": "gallery-frame-gold",
+      "path": "/assets/frames/gallery-frame-gold.svg",
+      "source": "design-context/assets/frames/gallery-frame-gold.svg",
+      "sha256": "4040dbe4f979286cde60557a23df8b59df3c850a6f18114b55e88674287da8b6",
+      "bytes": 660,
+      "nodeIds": [
+        "418:1284"
+      ]
+    },
+    {
+      "id": "preset-lemon",
+      "path": "/assets/fallbacks/lemon.png",
+      "source": "references/ScentLens_硬件开发交接_20261001/images/01_lemon.png",
+      "sha256": "240286b4f4fbca763db4cfe0cae357a206724f013b3f2afa5648b502cd2c884a",
+      "bytes": 1882444,
+      "role": "local-preset",
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "preset-rose",
+      "path": "/assets/fallbacks/rose.png",
+      "source": "references/ScentLens_硬件开发交接_20261001/images/02_rose.png",
+      "sha256": "7a74bffbfa2cdf1c8b85338b8375ce48544980a0e825ddea775b824abe197689",
+      "bytes": 1933781,
+      "role": "local-preset",
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "preset-lavender",
+      "path": "/assets/fallbacks/lavender.png",
+      "source": "references/ScentLens_硬件开发交接_20261001/images/03_lavender.png",
+      "sha256": "eac103ead9cdf98a898cf69cc934dd275df64e882cca96d4f897c9e07f992304",
+      "bytes": 1908739,
+      "role": "local-preset",
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "preset-grass",
+      "path": "/assets/fallbacks/grass.png",
+      "source": "references/ScentLens_硬件开发交接_20261001/images/04_grass.png",
+      "sha256": "22f6020809fcd5fba16c0d083b6b8308c2777cc51d514d5558c0a0614f7735ee",
+      "bytes": 1909240,
+      "role": "local-preset",
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "preset-peach",
+      "path": "/assets/fallbacks/peach.png",
+      "source": "references/ScentLens_硬件开发交接_20261001/images/05_peach.png",
+      "sha256": "03b0e99e9a032aa9282435513dda4022bdcd893532f0e41c8c13ff1f6a1a5123",
+      "bytes": 1829653,
+      "role": "local-preset",
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "preset-clove",
+      "path": "/assets/fallbacks/clove.png",
+      "source": "references/ScentLens_硬件开发交接_20261001/images/06_clove.png",
+      "sha256": "65afeac27d228252d0ebfa0c3f971917e5922b46f05353f23f1281cec51393dc",
+      "bytes": 1698118,
+      "role": "local-preset",
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "preset-cedarwood",
+      "path": "/assets/fallbacks/cedarwood.png",
+      "source": "references/ScentLens_硬件开发交接_20261001/images/07_cedarwood.png",
+      "sha256": "d531fefc0421abd4eab3796f9aaffd7a022f2400cb5c1d7cc18f4e466c5657c5",
+      "bytes": 1847918,
+      "role": "local-preset",
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "preset-vanilla",
+      "path": "/assets/fallbacks/vanilla.png",
+      "source": "references/ScentLens_硬件开发交接_20261001/images/08_vanilla.png",
+      "sha256": "1f6979cf2ecb52eef363f6bb3e4e2bb89e5841a22f0376cefc807300bc98d03c",
+      "bytes": 1853891,
+      "role": "local-preset",
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "license-noto-sans-sc",
+      "path": "/assets/licenses/noto-sans-sc-OFL.txt",
+      "source": "@fontsource-variable/noto-sans-sc@5.3.0/LICENSE",
+      "sha256": "18aabf190848725e2576eefb5c29ba06aac1029d02132252a7f312eac2e50cf3",
+      "bytes": 4314,
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "license-inter",
+      "path": "/assets/licenses/inter-OFL.txt",
+      "source": "@fontsource-variable/inter@5.3.0/LICENSE",
+      "sha256": "3b0a5fca3d17942cde889069889dedbbbd075e9b599968c82a95f4d944e9b345",
+      "bytes": 4477,
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "preset-neutral",
+      "path": "/assets/fallbacks/neutral.svg",
+      "source": "App-authored SVG · TASK-01",
+      "role": "local-preset",
+      "sha256": "c8572fe880da7783c15a7a1d1283ef8d3b01429c04746ff1bae2f97ec2cab072",
+      "bytes": 519
+    },
+    {
+      "id": "brand-mark",
+      "path": "/assets/brand/mark.svg",
+      "source": "App-authored SVG · TASK-01",
+      "role": "brand-mark",
+      "sha256": "655417d0f09587319345c4a5bb15dbd90b5d6ee800eda56d69ced6229061d1bb",
+      "bytes": 401
+    },
+    {
+      "id": "reading-fluid",
+      "path": "/assets/reading/reading-fluid.png",
+      "source": "design-context/assets/raster/reading-fluid.png",
+      "sha256": "8398e8c09a2313756494ef8fdcc64a074cd63da1bddf2fb4f61515d02e4a0ef9",
+      "bytes": 788463,
+      "role": "design-asset"
+    },
+    {
+      "id": "sample-a-development",
+      "path": "/assets/development/sample-a.png",
+      "source": "design-context/assets/raster/sample-a.png",
+      "sha256": "6eb6f0a9d919f7bdeab9669b7bd1197924e900fc75701bbb3af4d7a2e93524d9",
+      "bytes": 135924,
+      "role": "development-fixture"
+    },
+    {
+      "id": "back-reading-white",
+      "path": "/assets/icons/back-reading-white.svg",
+      "source": "design-context/assets/icons/back-reading-white.svg",
+      "sha256": "d6b6ed8560aeab2efbc362ae83faf9fc0c51efbc5e6c0fa99385c2d3ba57ca87",
+      "bytes": 220,
+      "role": "design-asset"
+    },
+    {
+      "id": "paper-stable",
+      "path": "/assets/icons/paper-stable.svg",
+      "source": "design-context/assets/icons/paper-stable.svg",
+      "sha256": "87b639513acb1f622550dc2a23a54ffeb194e202b275e27a403218b2a46f31ca",
+      "bytes": 500,
+      "role": "design-asset"
+    },
+    {
+      "id": "back-result",
+      "path": "/assets/icons/back-result.svg",
+      "source": "design-context/assets/icons/back-result.svg",
+      "sha256": "607d2302b530e15d18581a1acb3059f9b1204325524b854e35fb08a12c15d999",
+      "bytes": 222,
+      "role": "design-asset"
+    },
+    {
+      "id": "back-analysis",
+      "path": "/assets/icons/back-analysis.svg",
+      "source": "design-context/assets/icons/back-analysis.svg",
+      "sha256": "932bf987ef9b0b1b39ff2d0a9069ba887c3d27ba10b456f0bd76b75532c64825",
+      "bytes": 222,
+      "role": "design-asset"
+    },
+    {
+      "id": "swipe-up",
+      "path": "/assets/icons/swipe-up.svg",
+      "source": "design-context/assets/icons/swipe-up.svg",
+      "sha256": "722d7245a33bcd74b286767502a04c72c39c004e416f2ede2bc09a487e947f16",
+      "bytes": 221,
+      "role": "design-asset"
+    }
+  ]
+}

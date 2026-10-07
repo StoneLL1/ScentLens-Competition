@@ -1,0 +1,171 @@
+[
+  {
+    "package": "@capacitor-community/bluetooth-le",
+    "version": "8.3.0",
+    "license": "MIT",
+    "files": [
+      "licenses/capacitor-community__bluetooth-le/LICENSE"
+    ]
+  },
+  {
+    "package": "@capacitor/app",
+    "version": "8.1.2",
+    "license": "MIT",
+    "files": [
+      "licenses/capacitor__app/LICENSE"
+    ]
+  },
+  {
+    "package": "@capacitor/core",
+    "version": "8.5.2",
+    "license": "MIT",
+    "files": [
+      "licenses/capacitor__core/LICENSE"
+    ]
+  },
+  {
+    "package": "@capacitor/filesystem",
+    "version": "8.1.3",
+    "license": "MIT",
+    "files": [
+      "licenses/capacitor__filesystem/LICENSE"
+    ]
+  },
+  {
+    "package": "@capacitor/ios",
+    "version": "8.5.2",
+    "license": "MIT",
+    "files": [
+      "licenses/capacitor__ios/LICENSE"
+    ]
+  },
+  {
+    "package": "@capacitor/synapse",
+    "version": "1.0.4",
+    "license": "ISC",
+    "files": [
+      "licenses/capacitor__synapse/LICENSE.md"
+    ]
+  },
+  {
+    "package": "@fontsource-variable/inter",
+    "version": "5.3.0",
+    "license": "OFL-1.1",
+    "files": [
+      "licenses/fontsource-variable__inter/LICENSE"
+    ]
+  },
+  {
+    "package": "@fontsource-variable/noto-sans-sc",
+    "version": "5.3.0",
+    "license": "OFL-1.1",
+    "files": [
+      "licenses/fontsource-variable__noto-sans-sc/LICENSE"
+    ]
+  },
+  {
+    "package": "@types/web-bluetooth",
+    "version": "0.0.20",
+    "license": "MIT",
+    "files": [
+      "licenses/types__web-bluetooth/LICENSE"
+    ]
+  },
+  {
+    "package": "cookie",
+    "version": "1.1.1",
+    "license": "MIT",
+    "files": [
+      "licenses/cookie/LICENSE"
+    ]
+  },
+  {
+    "package": "dexie",
+    "version": "4.4.6",
+    "license": "Apache-2.0",
+    "files": [
+      "licenses/dexie/LICENSE",
+      "licenses/dexie/NOTICE"
+    ]
+  },
+  {
+    "package": "framer-motion",
+    "version": "14.0.0",
+    "license": "MIT",
+    "files": [
+      "licenses/framer-motion/LICENSE.md"
+    ]
+  },
+  {
+    "package": "motion",
+    "version": "14.0.0",
+    "license": "MIT",
+    "files": [
+      "licenses/motion/LICENSE.md"
+    ]
+  },
+  {
+    "package": "motion-dom",
+    "version": "14.0.0",
+    "license": "MIT",
+    "files": [
+      "licenses/motion-dom/LICENSE.md"
+    ]
+  },
+  {
+    "package": "motion-utils",
+    "version": "14.0.0",
+    "license": "MIT",
+    "files": [
+      "licenses/motion-utils/LICENSE.md"
+    ]
+  },
+  {
+    "package": "react",
+    "version": "19.3.0",
+    "license": "MIT",
+    "files": [
+      "licenses/react/LICENSE"
+    ]
+  },
+  {
+    "package": "react-dom",
+    "version": "19.3.0",
+    "license": "MIT",
+    "files": [
+      "licenses/react-dom/LICENSE"
+    ]
+  },
+  {
+    "package": "react-router",
+    "version": "7.18.4",
+    "license": "MIT",
+    "files": [
+      "licenses/react-router/LICENSE.md"
+    ]
+  },
+  {
+    "package": "scheduler",
+    "version": "0.28.0",
+    "license": "MIT",
+    "files": [
+      "licenses/scheduler/LICENSE"
+    ]
+  },
+  {
+    "package": "set-cookie-parser",
+    "version": "2.7.2",
+    "license": "MIT",
+    "files": [
+      "licenses/set-cookie-parser/LICENSE"
+    ]
+  },
+  {
+    "package": "tslib",
+    "version": "2.8.1",
+    "license": "0BSD",
+    "files": [
+      "licenses/tslib/LICENSE.txt"
+    ]
+  }
+]

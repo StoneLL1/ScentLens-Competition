@@ -1,0 +1,17 @@
+Convert the input scene into a highly simplified image prompt.
+
+Preserve the main subject, action, composition, and setting, but reduce everything into a few large color masses.
+
+Use one dominant subject, 3–5 major shapes, 2–4 harmonious colors, minimal internal detail, very low visual entropy, low edge density, and a quiet background.
+
+Replace detailed environments with broad continuous color fields: grass becomes a green field, sky a blue field, ocean a blue mass, forest a dark green mass.
+
+Remove textures, tiny objects, repeated details, complex gradients, and unnecessary background elements.
+
+Describe the subject mainly through silhouette, broad color, position, scale, and simple light-shadow regions.
+
+Place luminous ASCII mainly inside the subject; keep the background almost free of ASCII.
+
+If a detail is not necessary for recognition, remove it.
+
+Output only the final English prompt.

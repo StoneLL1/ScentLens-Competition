@@ -1,0 +1,148 @@
+{
+  "sourceRoot": "references/scent-viz（Image generation）/scent-viz",
+  "strategy": "TypeScript adaptation; source files retained read-only",
+  "files": [
+    {
+      "path": "src/api/app.py",
+      "sha256": "a49cd4bb4d857609e84813b447fb76d2a5ee438139468345c39052cb51375a45"
+    },
+    {
+      "path": "src/application/compile_recipe/service.py",
+      "sha256": "3b4ef3d9e4f252f052f13b7d301d855dce2ef5d591f20a8bf1b448b59d248a42"
+    },
+    {
+      "path": "src/application/generate_scene_prompt/service.py",
+      "sha256": "f672fe518c475bcec200a15ee7474b13074c9430d32d90623b71105afaa5efef"
+    },
+    {
+      "path": "src/domain/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/domain/input_validation/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/domain/input_validation/validation.py",
+      "sha256": "bcd9ffcb7449f952b4dabeacd144cea6ff8236578016cbc3397eed90891f4754"
+    },
+    {
+      "path": "src/domain/prompt_assembly/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/domain/prompt_assembly/composer.py",
+      "sha256": "66bc064b11c835ccfce87c45a0e0847484ffcb91597eff59053eddb4bacbd42e"
+    },
+    {
+      "path": "src/domain/rule_engine/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/domain/rule_engine/engine.py",
+      "sha256": "d8a51b025c40c14dff3325f7c400b365978ab61a3125b76c01bcfbbceea6500b"
+    },
+    {
+      "path": "src/domain/scene_input_builder/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/domain/scene_input_builder/builder.py",
+      "sha256": "5257e330a2d9710516ea9ddb2e33809f0ebcedd8e2ed7de055fca3ad56663d4a"
+    },
+    {
+      "path": "src/domain/scene_planner/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/domain/scene_planner/planner.py",
+      "sha256": "80a8464e26764a96408eceed79c4a088c6a3561862ef7e640769ef44418b9edf"
+    },
+    {
+      "path": "src/domain/seeded_random/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/domain/seeded_random/randomizer.py",
+      "sha256": "2cfbd2eba152a0975f3c37204c6375c76138b5179426a56849ca83ca55cec0f3"
+    },
+    {
+      "path": "src/domain/shared.py",
+      "sha256": "d52fa1c48e38012522e57efc728f0b623c8dca5fb78c2f369000b7142050d9c5"
+    },
+    {
+      "path": "src/domain/template_renderer/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/domain/template_renderer/renderer.py",
+      "sha256": "f6f0ca6b24314bcb8653b779a3957b833152165e58940de3e5f01a14676e715e"
+    },
+    {
+      "path": "src/domain/types.py",
+      "sha256": "c2ebe3b7fa0d71e017d3acfcf5b91283380a711ae7b6a2f5b0c58d7bc112d30a"
+    },
+    {
+      "path": "tests/test_rules.py",
+      "sha256": "3339ef0abffa1901ff80c4ab1e22ff36d3d1edd570c4377595172e38446661fb"
+    },
+    {
+      "path": "tests/test_services.py",
+      "sha256": "0557cdcb5a0d798d3c0d629066e908cf97ce533eacfd94a4ba1b0c5fe54fe405"
+    }
+  ],
+  "assets": [
+    {
+      "file": "compatibility.json",
+      "sha256": "0f31cdf5c551333875f4ef2f2b52c5843e8500df013e5edbd73e7d799afb82e3"
+    },
+    {
+      "file": "composition_templates.json",
+      "sha256": "2d1a0f1aebef4a9e352d41838784cec6596f137d8c183a55c91519a027af6821"
+    },
+    {
+      "file": "project_scene_constraints.txt",
+      "sha256": "15d8fa1b831f36fe3376fc0be80effaee13cfa1ad868f00924e4d154b19f6b76"
+    },
+    {
+      "file": "prompt_manifest.json",
+      "sha256": "5e965155be103af69515e02476d76ccafebb455a6174495c3e57299b0a9038a5"
+    },
+    {
+      "file": "rules.json",
+      "sha256": "e4e033de1ce13eeb2b2f588e89e8a06acc67b3cf29c05b0e8fdfd5d16a3e4372"
+    },
+    {
+      "file": "scene_constraints.txt",
+      "sha256": "4d43dfb67d41f4496e70fba8065ecd812c3b1468eb76c0efe730f991eefd6aaa"
+    },
+    {
+      "file": "scene_simplifier_instruction.txt",
+      "sha256": "91835e25b9c6d5edbb2d4760c6ab5e12f318c6eb732ded68ee395f8934802176"
+    },
+    {
+      "file": "scent_atmosphere.json",
+      "sha256": "bb912aa46fc4bddc9e767a921d54272da9199a744f7dee50ba0f69f684dfa914"
+    },
+    {
+      "file": "scent_motifs.json",
+      "sha256": "a0a03167c5d0f4faf80888f642cc8e05254b7bcd8b076bfefec7c052d903e1b8"
+    },
+    {
+      "file": "style_ascii.txt",
+      "sha256": "fa70674cb734ce6962c0d4433e123f00bf08fb249e759a788c6049a34ed87ccb"
+    },
+    {
+      "file": "style_photographic.txt",
+      "sha256": "225733fb6c1e86208a16f89e2ec30579bc9df90e27656df7e8d377444a0d82da"
+    }
+  ],
+  "promptRuntimeDigestConvention": "Python universal newlines, then rstrip(LF); SHA-256 UTF-8",
+  "promptRuntimeDigests": {
+    "scene_simplifier_instruction": "4eb556b2ccaddc3291435d52f878fe24783b1811a00a723984fb8681c68e5178",
+    "project_scene_constraints": "dff86b96c742022b43c20ca77f97f47f7996c89d99248a48bbe9ce37f7a1d9ba",
+    "style_photographic": "9760fc0cecf10c2b5f9641f26f88a6981cf5ae771222c0f186fe47dbf8ff1a24",
+    "style_ascii": "24a78b2fe7d6c322d2d1d90c7cc096ab14f8fa45797e4ec9a2bf049ddc5f2241",
+    "scene_constraints": "e8acdae8aaf2f4d2a0c5ce601129baa5cb02fa3138f039b8a45232952a1d4a07"
+  }
+}

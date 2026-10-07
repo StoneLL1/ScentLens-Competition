@@ -1,0 +1,8 @@
+/* Only the Latin Inter variable face is used. Chinese falls back to Noto Sans SC. */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url('@fontsource-variable/inter/files/inter-latin-wght-normal.woff2') format('woff2-variations');
+}

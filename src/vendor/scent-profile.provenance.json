@@ -1,0 +1,97 @@
+{
+  "source": "references/Picture-gen（8D diagram）/src/scent-profile",
+  "date": "2026-10-02",
+  "notes": "Owner-supplied source. Original hashes retained in sha256; explicit App adaptations carry a separate hash and reason. React host hides standalone header and controls. No inferred redistribution license.",
+  "files": [
+    {
+      "path": "config.ts",
+      "sha256": "65f66dc60dd06579e9c07a1ebe7bd7174bbdd67cc2197741995995e1755b35bd"
+    },
+    {
+      "path": "data/controller.ts",
+      "sha256": "6886a7a66c3217419e4cec711041f5170fbab49e8ea1e69c7c681de42ed760e4"
+    },
+    {
+      "path": "data/frame.ts",
+      "sha256": "b7a43a836c4ec7e11abd802d151f13df3444f0ca49ac7065029c317c22189cc3"
+    },
+    {
+      "path": "data/presets.ts",
+      "sha256": "8699b4bb2d64981e8833e58218d8448d8cc39ed64277e363edfef8baaf8d80f7"
+    },
+    {
+      "path": "data/validate.ts",
+      "sha256": "1567b5c0897dcf4d43c5f6ba2175afbea6b0739547741f3849ec2caa589a668e"
+    },
+    {
+      "path": "fields/colors.ts",
+      "sha256": "6c8ed4b84b5f073d7657c0bd5a99eb5b1cae9868360b6e7733cd8a63e456f6b7"
+    },
+    {
+      "path": "fields/density.ts",
+      "sha256": "3b75876a47673b66d8c95f38f48a2b2c97b1a1223ab5e061aa0f278c797cb75e"
+    },
+    {
+      "path": "fields/masks.ts",
+      "sha256": "1874b50766dba464eac06ad8d6624a95e4d77787d3a1dd08ab078bc6dee91e10"
+    },
+    {
+      "path": "fields/noise.ts",
+      "sha256": "0142e9abe15768938184f9850d589bddece5b49b83548bb5cb8721c9c8e89bba"
+    },
+    {
+      "path": "geometry/cyclic-radius.ts",
+      "sha256": "09410d4afcc14f603be4ece04c7286bdea1ef4881a677b74c415756a4b1efc23"
+    },
+    {
+      "path": "geometry/grid.ts",
+      "sha256": "1c10c07cedc60c628eca7630d25688e6fa9742589dd83dcc054554ace462372e"
+    },
+    {
+      "path": "geometry/polar-cache.ts",
+      "sha256": "de60b17d5b39bb2d49d4c371af99d5e0f324dd417395ff258065fce5d313cac7"
+    },
+    {
+      "path": "index.ts",
+      "sha256": "1dddc70eb957684b21ceb309e2b47ec755d2758b45424be86b50225bebdbf67a"
+    },
+    {
+      "path": "motion/controller.ts",
+      "sha256": "9d204540465d9d2c7ceeab39e1507cbb4313647d4df9101e3ca45ea22aaeeaf4"
+    },
+    {
+      "path": "render/canvas-renderer.ts",
+      "sha256": "44981d24f7311a3c7896d87a33fdc5d8039dfb7d2cf85661ce4ef57e58a4e957",
+      "adaptation": {
+        "date": "2026-10-03",
+        "sha256": "0cb20dc10c96afc3922ad2efe89f3d2c05c0034b8fea58461b618de4ba110243",
+        "reason": "Separate body/fog scratch canvases to prevent deferred WebKit drawImage from displaying fog pixels in the body layer. Pure pixel pipeline, geometry, seed and colors unchanged.",
+        "validation": "docs/validation/mac-task01-06/validation.md"
+      }
+    },
+    {
+      "path": "render/quality.ts",
+      "sha256": "71f0d0b9b9a793c1a46c2b3ac04c18792353c4c8911730352cb97802023eb290"
+    },
+    {
+      "path": "render/svg-layer.ts",
+      "sha256": "271539f34f4af60561ea745b347c7dd6ba3e6d8e2db852d8822a03e65c163b20"
+    },
+    {
+      "path": "styles.css",
+      "sha256": "4bff1c5bcdd3e774c936f383dff507b65f9f286632f9a52c42e1a68c6dafae4f"
+    },
+    {
+      "path": "types.ts",
+      "sha256": "7bba012dc2f282d2290d94105e69778dd48bd4bb3fef807a5c61d9807403c005"
+    },
+    {
+      "path": "ui/debug.ts",
+      "sha256": "3924afe100dba5afee2fda9c4cabd6c03b7618d1f088e8548a6c96855174a283"
+    },
+    {
+      "path": "ui/readout.ts",
+      "sha256": "3a1cd5de1fdf3260b2ebc9d5fd5dc3cebced22d3f0365072698e7c33a0316e9b"
+    }
+  ]
+}
